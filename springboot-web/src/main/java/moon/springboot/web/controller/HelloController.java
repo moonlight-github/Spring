@@ -21,5 +21,10 @@ public class HelloController {
 	public String hello() {
 		return "Hello StringBoot-Web";
 	}
+	@RequestMapping("/test")
+	@ResponseBody//Json返回
+	public String test() {
+		return "Hello StringBoot-Web:test";
+	}
 
 }

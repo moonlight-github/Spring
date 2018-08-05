@@ -2,6 +2,7 @@ package moon.springboot.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 
 /** 
 * @author 作者 moonlight 
@@ -10,6 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 */
 
 @SpringBootApplication// 标记为springboot项目：自动扫描同级或下级路径中的controler
+//指定要扫描的servlet,filter包路径
+@ServletComponentScan(basePackages = {"moon.springboot.web.servlet","moon.springboot.web.filter"}) 
 public class WebApplication {
 	
 	public static void main(String[] args) {
