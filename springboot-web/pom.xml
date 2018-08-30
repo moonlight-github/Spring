@@ -77,16 +77,18 @@
 		<finalName>springboot-web</finalName>
 		
 		<plugins>
+			<!-- springboot 打包插件 -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<executions>
+				<!-- <version>1.4.2.RELEASE</version> -->  <!-- 打jar包 -->
+				<!-- <executions>
 					<execution>
 						<goals>
 							<goal>repackage</goal>
 						</goals>
 					</execution>
-				</executions>
+				</executions> -->
 			</plugin>
 		</plugins>
 		<!--配置打包的参数 -->
