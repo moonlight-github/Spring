@@ -140,5 +140,6 @@
 		<module>springcloud-example-provier-dept03</module>
 		<module>springcloud-example-consumer-dept-feign</module>
 		<module>springcloud-example-provier-hystrix-dept01</module>
+		<module>springcloud-example-provier-hystrix-dept02</module>
 	</modules>
 </project>
