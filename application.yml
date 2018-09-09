@@ -1,0 +1,17 @@
+#统一的配置环境
+spring:
+  profiles:
+    active:
+    - dev
+---
+spring:
+  profiles: dev     #开发环境
+  application:
+    name: springcloud-example-config-dev
+---
+spring:
+  profiles: test     #开发环境
+  application:
+    name: springcloud-example-config-test
+
+#文件必须UTF-8保存

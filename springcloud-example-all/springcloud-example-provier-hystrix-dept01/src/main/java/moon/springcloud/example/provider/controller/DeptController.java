@@ -40,6 +40,7 @@ public class DeptController {
 	}
 	
 	@GetMapping("/dept/get/{id}")
+	// 熔断统一整合到DeptClientServiceFallbackFactory
 	@HystrixCommand(fallbackMethod = "hystrixGet")
 	public Dept get(@PathVariable("id") Long id) {
 		Dept dept = ser.get(id);

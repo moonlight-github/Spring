@@ -14,7 +14,8 @@ import moon.springcloud.example.api.entity.Dept;
 * @version 创建时间：2018年8月20日 下午10:38:01 
 * 类说明 :使用feign来实现负载均衡服务调用
 */
-@FeignClient(value = "SPRINGCLOUD-EXAMPLE-PROVIER")
+//@FeignClient(value = "SPRINGCLOUD-EXAMPLE-PROVIER")
+@FeignClient(value = "SPRINGCLOUD-EXAMPLE-PROVIER",fallbackFactory = DeptClientServiceFallbackFactory.class)
 public interface DeptClientService {
 
 	@PostMapping("/dept/add")

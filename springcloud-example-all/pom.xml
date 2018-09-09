@@ -141,5 +141,8 @@
 		<module>springcloud-example-consumer-dept-feign</module>
 		<module>springcloud-example-provier-hystrix-dept01</module>
 		<module>springcloud-example-provier-hystrix-dept02</module>
+		<module>springcloud-example-provier-hystrix-dashboard</module>
+		<module>springcloud-example-consumer-hystrix-dashboard</module>
+		<module>springcloud-example-zuul-getway</module>
 	</modules>
 </project>
