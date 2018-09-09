@@ -144,5 +144,6 @@
 		<module>springcloud-example-provier-hystrix-dashboard</module>
 		<module>springcloud-example-consumer-hystrix-dashboard</module>
 		<module>springcloud-example-zuul-getway</module>
+		<module>springcloud-example-config-3344</module>
 	</modules>
 </project>

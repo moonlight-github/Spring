@@ -1,0 +1,33 @@
+#统一的配置环境
+spring:
+  profiles:
+    active:
+    - dev
+---
+server:
+  port: 4401
+spring:
+  profiles: dev     #开发环境
+  application:
+    name: springcloud-example-config-client
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://moon.eureka00.com:7010/eureka/
+  
+---
+server:
+  port: 4402
+spring:
+  profiles: test     #开发环境
+  application:
+    name: springcloud-example-config-client
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://moon.eureka00.com:7010/eureka/
+ 
+
+#文件必须UTF-8保存
